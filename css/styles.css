@@ -99,13 +99,14 @@ body {
 
 .contact ul li .logo {
     display: inline-block;
-    width: 19px;
-    font-size: 18px;
+    width: 10px;
+    font-size: 12px;
     color: #03a9f4;
 }
 
 .contact ul li span {
     color: #fff;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -227,6 +228,33 @@ p {
     background: #03a9f4;
 }
 
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.skills ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px, 0;
+    justify-content: center;
+}
+
+.skills ul li .fas {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+    justify-content: center;
+}
+
+.skills ul li .fab {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+    justify-content: center;
+}
+
 .interest ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -247,12 +275,22 @@ p {
     justify-content: center;
 }
 
+.interest ul li .fas {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+    justify-content: center;
+}
+
 @media (max-width: 1000px) {
     .container {
         margin: 0;
         grid-template-columns: repeat(1, 1fr);
     }
     .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills ul {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -269,6 +307,9 @@ p {
         grid-template-columns: repeat(1, 1fr);
     }
     .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills ul {
         grid-template-columns: repeat(1, 1fr);
     }
 }
