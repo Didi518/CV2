@@ -110,6 +110,11 @@ body {
     font-weight: 300;
 }
 
+.contact ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .formation li {
     margin-bottom: 15px;
     list-style: none;
